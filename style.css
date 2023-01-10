@@ -37,6 +37,9 @@ li {
 /* END HEADER */
 
 /* START MAIN */
+main {
+  background-image: url('./assets/images/hieroglyphs-gd526aa18c_1920.jpg');
+}
 #myVideo {
   right: 0;
   bottom: 0;
@@ -53,8 +56,16 @@ img {
   height: auto;
   margin-bottom: 2rem;
 }
+main h1 {
+  text-shadow: 2px 2px white;
+}
+main h2 {
+  text-shadow: 2px 2px white;
+}
+section img {
+  box-shadow: 2px 2px white;
+}
 /* END MAIN */
 
 /* START FOOTER */
-
 /* END FOOTER */
