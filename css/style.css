@@ -68,4 +68,8 @@ section img {
 /* END MAIN */
 
 /* START FOOTER */
+.footer__iframe {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 /* END FOOTER */
