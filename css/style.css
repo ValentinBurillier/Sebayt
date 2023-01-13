@@ -65,6 +65,13 @@ main h2 {
 section img {
   box-shadow: 2px 2px white;
 }
+main section span {
+  font-style: italic;
+  font-weight: bold;
+}
+main section p:hover {
+  opacity: 0.5;
+}
 /* END MAIN */
 
 /* START FOOTER */
