@@ -38,7 +38,7 @@ li {
 
 /* START MAIN */
 main {
-  background-image: url('./assets/images/hieroglyphs-gd526aa18c_1920.jpg');
+  background-image: url('../assets/images/hieroglyphs-gd526aa18c_1920.jpg');
 }
 #myVideo {
   right: 0;
@@ -63,14 +63,18 @@ main h2 {
   text-shadow: 2px 2px white;
 }
 section img {
-  box-shadow: 2px 2px white;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgb(255, 255, 255, 0.5);
+}
+section img:hover {
+  padding: 10px;
+  box-shadow: none;
+}
+main section p:hover {
+  opacity: 0.7;
 }
 main section span {
   font-style: italic;
-  font-weight: bold;
-}
-main section p:hover {
-  opacity: 0.5;
 }
 /* END MAIN */
 
