@@ -56,12 +56,24 @@ img {
   max-width: 100%;
   height: auto;
   margin-bottom: 2rem;
+  object-fit: cover;
 }
 main h1 {
   text-shadow: 2px 2px white;
 }
+.main_linkPdf::before {
+  content: "💾";
+}
+.main_linkPdf::after {
+  content: "329Ko";
+  font-size: 12px;
+  position: relative;
+  right: -1rem;
+  color: grey;
+}
 main h2 {
-  text-shadow: 2px 2px white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 section img {
   box-shadow: 2px 2px white;
