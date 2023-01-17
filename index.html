@@ -11,17 +11,17 @@
 </head>
 <body>
   <!--START HEADER-->
-  <header class="header container p-0">
+  <header class="header container-fluid p-0">
     <nav>
-      <ul class="row align-items-center p-1 m-0 text-center">
-        <li class="col-4 p-0">
-          <a href="./index.html" class="header__link">Accueil</a>
+      <ul class="row align-items-center p-2 m-0 text-center">
+        <li class="col-5 p-0">
+          <a href="./index.html" class="header__link fs-5">Accueil</a>
         </li>
-        <li class="col-4 p-0">
+        <li class="col-2 p-0">
           <img class="header__img m-0 p-2" src="assets/images/logo-sebayt.jpg" alt="Logo Sebayt">
         </li>
-        <li class="col-4 p-0">
-          <a href="./evenements.html" class="header__link">évènements</a>
+        <li class="col-5 mr- p-0">
+          <a href="./evenements.html" class="header__link fs-5">évènements</a>
         </li>
       </ul>
     </nav>
@@ -30,30 +30,35 @@
 
   <!--START MAIN-->
   <main>
-    <div class="main__div container p-2">
-      <video class="main__video" muted autoplay id="myVideo">
-        <source src="./assets/videos/pexels-juancarlos-córdova-7575359.mp4" type="video/mp4">
-      </video>
-      <h1 class="text-center m-1">Association Sébayt</h1>
-      <section class="container text-center mt-2 p-0">
-        <h2 class="text-center">Les dernières conférences</h2>
+    <div class="main__div container-fluid p-2">
+      <div>
+        <video class="main__video" muted autoplay id="myVideo">
+          <source src="./assets/videos/pexels-juancarlos-córdova-7575359.mp4" type="video/mp4">
+        </video>
+        <h2 class="main__h2 text-center text-uppercase">Bienvenue</h2>
+      </div>
+   
+      <h1 class="main__title text-center mt-2 mb-2 bg-black p-2 text-white">Association Sébayt<br>Les dernières conférences</h1>
+      <section class="d-flex flex-wrap justify-content-center container-fluid text-center mt-3 mb-3 p-0">
         <img src="./assets/images/conférences/conference-2022-12-08.jpg" alt="affiche conférence Sébayt du 08/12/22">
         <img src="./assets/images/conférences/conference-2022-11-24.png" alt="affiche conférence Sébayt du 24/11/22">
         <img src="./assets/images/conférences/conference-2022-10-27.jpg" alt="affiche conférence Sébayt du 27/10/22">
         <img src="./assets/images/conférences/conference-2022-10-15.jpg" alt="affiche conférence Sébayt du 15/10/22">
+        <img src="./assets/images/conférences/conference-2022-06-16.png" alt="affiche conférence Sébayt du 16/06/22" class="main__img">
+        <img src="./assets/images/conférences/conference-2022-04-21.png" alt="affiche conférence Sébayt du 21/04/22" class="main__img">
       </section>
-      <section class="text-center p-0 m-0">
-        <h2 class="bg-dark m-0 p-2">Membres de l'association</h2>
-        <p class="fw-bolder fs-2">Romains Ferreres, <span class="fs-3">vice-président</span></p>
-        <p class="fw-bolder fs-2">Anaïs Montoto Soto, <span class="fs-3">secrétaire</span></p>
-        <p class="fw-bolder fs-2">Marianne Pinon, <span class="fs-3">secrétaire adjointe</span></p>
-        <p class="fw-bolder fs-2">Amel Bouhafs, <span class="fs-3">trésorière</span></p>
-        <p class="fw-bolder fs-2">Marc Gabolde, <span class="fs-3">président</span></p>
-        <p class="fw-bolder fs-2">Margarita Danilova, <span class="fs-3">trésorière adjointe</span></p>
-        <p class="fw-bolder fs-2">Florine Bodier, <span class="fs-3">membre supplémentaire</span></p>
-        <p class="fw-bolder fs-2">Marion Claude, <span class="fs-3">membre supplémentaire</span></p>
-        <p class="fw-bolder fs-2">Edwin Danilo, <span class="fs-3">membre supplémentaire</span></p>
-        <p class="fw-bolder fs-2">Mathilde Platon, <span class="fs-3">membre supplémentaire</span></p>
+      <section class="text-center p-0 m-0 row">
+        <h2 class="bg-dark text-white m-0 p-2 fs-2">Membres de l'association</h2>
+        <p class="fw-bolder fs-4">Romains Ferreres, <span class="fs-5">vice-président</span></p>
+        <p class="fw-bolder fs-4">Marianne Pinon, <span class="fs-5">secrétaire adjointe</span></p>
+        <p class="fw-bolder fs-4">Amel Bouhafs, <span class="fs-5">trésorière</span></p>
+        <p class="fw-bolder fs-4">Marc Gabolde, <span class="fs-5">président</span></p>
+        <p class="fw-bolder fs-4">Anaïs Montoto Soto, <span class="fs-5">secrétaire</span></p>
+        <p class="fw-bolder fs-4">Margarita Danilova, <span class="fs-5">trésorière adjointe</span></p>
+        <p class="fw-bolder fs-4">Florine Bodier, <span class="fs-5">membre supplémentaire</span></p>
+        <p class="fw-bolder fs-4">Marion Claude, <span class="fs-5">membre supplémentaire</span></p>
+        <p class="fw-bolder fs-4">Edwin Danilo, <span class="fs-5">membre supplémentaire</span></p>
+        <p class="fw-bolder fs-4">Mathilde Platon, <span class="fs-5">membre supplémentaire</span></p>
       </section>
     </div>
   </main>
@@ -61,26 +66,24 @@
 
 <!--START FOOTER-->
   <footer class="container text-center p-0">
-    <h3 class="bg-black text-white p-2">Nous contacter</h3>
-    <a href="mailto:asso.sebayt@gmail.com">asso.sebayt@gmail.com</a>
-    <h3 class="bg-black text-white p-2 mt-2">Nos réseaux sociaux</h3>
-    <ul class="container p-0 m-0">
-      <li class="d-flex align-items-center justify-content-center mt-3 mb-3">
-        <img src="./assets/images/social network/icons8-facebook-nouveau-48.png" class="footer__img m-0" alt="sebayt Facebook">
-        <a href="https://www.facebook.com/Sebayt.Association.Montpellier.Egyptologie/?ref=page_internal">Facebook</a>
+    <h3 class="bg-black text-white p-2 fs-2">Nous contacter</h3>
+    <a href="mailto:asso.sebayt@gmail.com" class="fs-4">asso.sebayt@gmail.com</a>
+    <h3 class="bg-black text-white p-2 mt-2 fs-2">Nos réseaux sociaux</h3>
+    <ul class="d-flex flex-column flex-sm-row justify-content-around align-items-center text-center mt-3 p-0">
+      <li class="p-3">
+        <a href="https://www.facebook.com/Sebayt.Association.Montpellier.Egyptologie/?ref=page_internal"><img src="./assets/images/social network/icons8-facebook-nouveau-48.png" class="footer__img m-0" alt="sebayt Facebook">Facebook</a>
       </li>
-      <li class="d-flex align-items-center justify-content-center mt-3">
-        <img src="./assets/images/social network/icons8-instagram-48.png" class="footer__img m-0" alt="sebayt instagram">
-        <a href="https://www.instagram.com/asso_sebayt/?hl=fr">Instagram</a>
+      <li class="p-3">
+        <a href="https://www.instagram.com/asso_sebayt/?hl=fr"><img src="./assets/images/social network/icons8-instagram-48.png" class="footer__img m-0" alt="sebayt instagram">Instagram</a>
       </li>
     </ul>
-    <address class="container mt-3">
+    <address class="container mt-3 fs-4">
       Université Paul Valery <br>
       Montpellier 3 - Site de Saint-Charles 2 <br>
       Route de Mende <br>
       34199 Montpellier cedex 5
-      <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7732.185524194309!2d3.863474359871172!3d43.63342035771826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af217be1ff51%3A0x26d70bd15039af4c!2sUniversit%C3%A9%20Paul-Val%C3%A9ry%20Montpellier%203!5e0!3m2!1sfr!2sfr!4v1673358682861!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </address>
+    <iframe class="footer__iframe mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7732.185524194309!2d3.863474359871172!3d43.63342035771826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af217be1ff51%3A0x26d70bd15039af4c!2sUniversit%C3%A9%20Paul-Val%C3%A9ry%20Montpellier%203!5e0!3m2!1sfr!2sfr!4v1673358682861!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </footer>
 <!--END FOOTER-->
 </body>
