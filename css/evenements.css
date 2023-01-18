@@ -9,12 +9,9 @@
   font-size: 14px;
   color: black;
 }
-
 a {
   text-decoration: none;
   color: inherit;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 li {
   list-style: none;
@@ -31,6 +28,11 @@ li {
 .header__link {
   font-size: 0.7rem;
 }
+@media screen and (min-width: 768px) {
+  .header__link {
+    text-transform: uppercase;
+  }
+}
 .header__link:hover {
   color: inherit;
   border-bottom: 1px solid black;
@@ -38,19 +40,31 @@ li {
 /* END HEADER */
 
 /* START MAIN */
-main {
-  background-image: url('./assets/images/hieroglyphs-gd526aa18c_1920.jpg');
-}
 #myVideo {
+  position: relative;
   right: 0;
   bottom: 0;
   max-width: 100%;
   min-height: 100%;
   z-index: -1;
 }
-h1 {
-  text-transform: uppercase;
-  color: black;
+.main__h2 {
+  visibility: hidden;
+  position: absolute;
+  font-size: 6vh;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 5px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 1200px) {
+  .main__h2 {
+    visibility: visible;
+    transition: 10s;
+  }  
 }
 img {
   max-width: 100%;
@@ -58,8 +72,11 @@ img {
   margin-bottom: 2rem;
   object-fit: cover;
 }
-main h1 {
-  text-shadow: 2px 2px white;
+.main__tile {
+  font-size: 4vh;
+}
+.main_linkPdf {
+  font-size: 2.5vh;
 }
 .main_linkPdf::before {
   content: "💾";
