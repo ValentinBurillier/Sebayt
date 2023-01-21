@@ -26,6 +26,10 @@ h1, h2, h3 {
 /* START HEADER */
 .header {
   border-bottom: 1px solid red;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 1;
 }
 .header__img {
   width: 3rem;
@@ -84,6 +88,29 @@ h1, h2, h3 {
   box-shadow: 5px 5px black;
   font-weight: 400;
 }
+@media screen and (min-width: 482px) {
+  .img__conf110223 {
+    display: none;
+  }
+}
+
+.container__linkAdhésion {
+  background: linear-gradient(rgb(128, 128, 128, 0.1), rgb(255, 255, 255, 0.9));
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(0, 0, 0, 0.5);
+}
+.container__linkAdhésion:hover {
+  transform: translateY(5px);
+  box-shadow: 3px 3px rgb(0, 0, 0, 0.6);
+  background: radial-gradient(90deg,white, rgb(0, 0, 0, 0.2));
+}
+.link__bulletinAdhésion::before {
+  content: "💾";
+} 
+.link__bulletinAdhésion::after {
+  font-size: 2vh;
+  content: "329Ko";
+}
 .main__h1 {
   font-size: 4vh;
 }
@@ -94,6 +121,7 @@ h1, h2, h3 {
   max-width: 100%;
   height: auto;
   margin-bottom: 2rem;
+  object-fit: contain;
 }
 .section__img:hover {
   border-radius: 5px;
