@@ -56,7 +56,7 @@ h1, h2, h3 {
 #myVideo {
   width: 100%;
 }
-.main__h2 {
+.main__h1 {
   visibility: hidden;
   position: absolute;
   font-size: 6vh;
@@ -67,7 +67,7 @@ h1, h2, h3 {
   background-color: transparent;
 }
 @media screen and (min-width: 1200px) {
-  .main__h2 {
+  .main__h1 {
     transition: 10s;
     visibility: visible;
   }  

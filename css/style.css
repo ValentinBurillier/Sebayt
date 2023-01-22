@@ -56,22 +56,29 @@ h1, h2, h3 {
 #myVideo {
   width: 100%;
 }
-.main__h2 {
+.main__p {
   visibility: hidden;
   position: absolute;
   font-size: 6vh;
   letter-spacing: 5px;
   top: 50%;
   left: 50%;
+  color: white;
   transform: translate(-50%, -50%);
   background-color: transparent;
 }
 @media screen and (min-width: 1200px) {
-  .main__h2 {
+  .main__p {
     transition: 10s;
     visibility: visible;
   }  
 }
+@media screen and (min-width: 820px) {
+  .conf110223 {
+    width: 75vw;
+  }
+}
+
 .presentation__p {
   border-radius: 10px;
   padding: 5px;
